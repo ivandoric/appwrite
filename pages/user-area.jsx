@@ -41,7 +41,6 @@ function UserArea() {
 
   const logout = () => {
     const res = sdk.account.deleteSessions();
-
     res.then(
       () => router.push('/'),
       (error) => {
